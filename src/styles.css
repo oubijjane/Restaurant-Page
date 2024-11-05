@@ -5,3 +5,6 @@ img {
 p {
     width: 400px;
 }
+.bold {
+    font-weight: bold;
+}

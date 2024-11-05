@@ -1,6 +1,7 @@
 import "./styles.css";
 import { loadPage } from "./home.js";
 import { createMenu, loadMenuPage } from "./menu.js";
+import loadContactPage from "./contact.js";
 
 loadPage();
 
@@ -19,7 +20,7 @@ function displayConstroller() {
             loadMenuPage();
         }
         else if (e.target.className === "contact") {
-            
+            loadContactPage();
         }
     });
 
