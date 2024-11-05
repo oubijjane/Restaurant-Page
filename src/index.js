@@ -1,5 +1,28 @@
 import "./styles.css";
-import "./rests.jpg";
+import { loadPage } from "./home.js";
+import { createMenu, loadMenuPage } from "./menu.js";
 
+loadPage();
 
-console.log("test>>>>>>>123")
+/* createMenu();
+loadMenuPage(); */
+
+function displayConstroller() {
+    const nav = document.querySelector("nav");
+    const div = document.querySelector(".content");
+
+    nav.addEventListener("click", (e) => {
+        div.replaceChildren();
+        if (e.target.className === "home") {
+            loadPage();
+        } else if (e.target.className === "menu") {
+            loadMenuPage();
+        }
+        else if (e.target.className === "contact") {
+            
+        }
+    });
+
+}
+
+displayConstroller();
