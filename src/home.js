@@ -37,15 +37,15 @@ function loadPage() {
 
     const bestDishs = document.createElement("ul");
     const bestDish1 = document.createElement("li");
-    bestDish1.textContent = `[Signature Dish #1] - A savory masterpiece with flavors you won’t find anywhere else.`;
+    bestDish1.textContent = `Grilled Salmon with Asparagus - A savory masterpiece with flavors you won’t find anywhere else.`;
     bestDishs.appendChild(bestDish1);
 
     const bestDish2 = document.createElement("li");
-    bestDish2.textContent = `[Signature Dish #2] - Our chef’s favorite, blending traditional recipes with modern flair.`;
+    bestDish2.textContent = `Lemon Sorbet - Our chef’s favorite, blending traditional recipes with modern flair.`;
     bestDishs.appendChild(bestDish2);
 
     const bestDish3 = document.createElement("li");
-    bestDish3.textContent = `[Signature Dish #3] - A delightful dish that’s as beautiful as it is delicious.`;
+    bestDish3.textContent = `Stuffed Mushrooms - A delightful dish that’s as beautiful as it is delicious.`;
     bestDishs.appendChild(bestDish3);
 
     div.appendChild(bestDishs);

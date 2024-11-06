@@ -68,8 +68,16 @@ function loadMenuPage() {
       cell.appendChild(categorieTitle);
       categorieElemenet.meals.forEach(meal => {
         const p = document.createElement("p");
-        p.textContent = `${meal.name}: ${meal.Description}`;
-        cell.appendChild(p);
+        const p2 = document.createElement("p");
+        const content1 = document.createElement("div");
+        content1.className = "content1";
+        p.className = "mealName";
+        p2.className = "description";
+        p.textContent = `${meal.name}: `;
+        p2.textContent = `${meal.Description}`;
+        content1.appendChild(p);
+        content1.appendChild(p2);
+        cell.appendChild(content1);
       });
       div.appendChild(cell);
     });
